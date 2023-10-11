@@ -109,9 +109,6 @@ const Form: FC<FormProps> = ({
             defaultValue={languages[0].value}
             options={languages}
             rules={languageValidation()}
-            onChange={(val: any) => {
-              console.log(val)
-            }}
             error={!!errors.language}
             helperText={errors.language?.message}
           />

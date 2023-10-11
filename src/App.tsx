@@ -28,7 +28,7 @@ const App: FC = () => {
   }
 
   return (
-    <Layout title="">
+    <Layout>
       <FormProvider {...methods}>
         <Form
           control={control}

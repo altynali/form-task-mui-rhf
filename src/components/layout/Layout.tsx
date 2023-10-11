@@ -5,7 +5,6 @@ import { makeStyles } from "@mui/styles"
 
 interface LayoutProps {
   children: ReactNode
-  title: string
 }
 
 const useStyles = makeStyles(() => ({
@@ -18,7 +17,7 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children, title }) => {
+const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children }) => {
   const classes = useStyles()
 
   return (
